@@ -844,7 +844,7 @@
   let signature = {
     align(bottom)[
       #pad(bottom: 2em)[
-        #if ("signature" in author and type(author.signature) == image) {
+        #if ("signature" in author) {
           author.signature
         }
         #text(weight: "light")[#linguify("sincerely", from: lang_data)#if (
